@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Your JavaScript code here
+        const menuToggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("menu");
+        const closeIcon = document.getElementById("closeIcon");
+
+        menuToggle.addEventListener("click", () => {
+          menu.classList.add("active");
+          menuToggle.classList.add("hidden");
+          closeIcon.classList.remove("hidden");
+        });
+        closeIcon.addEventListener("click", () => {
+          menu.classList.remove("active");
+          menuToggle.classList.remove("hidden");
+          closeIcon.classList.add("hidden");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo-container">
+        <img src="./images/logo.svg" alt="logo" />
+      </div>
+
+      <div id="menu-toggle" class="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <div class="close hidden" id="closeIcon">&#10005;</div>
+
+      <div id="menu" class="button-group menu">
+        <button class="nav-button">Home</button>
+        <button class="nav-button">New</button>
+        <button class="nav-button">Popular</button>
+        <button class="nav-button">Trending</button>
+        <button class="nav-button">Categories</button>
+      </div>
+    </nav>
+    <main>
+      <header>
+        <div class="header-image-container">
+          <img src="./images/image-web-3-desktop.jpg" alt="" />
+        </div>
+        <div class="content-container">
+          <h1>The Bright Future of Web 3.0?</h1>
+          <div class="paragraph-container">
+            <p>
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <button>Read more</button>
+          </div>
+        </div>
+      </header>
+      <article class="right">
+        <h2>New</h2>
+        <div class="news-card">
+          <h5>Hydrogen VS Electric Cars</h5>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <div class="line"></div>
+        <div class="news-card">
+          <h5>The Downsides of AI Artistry</h5>
+          <p>
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+        </div>
+        <div class="line"></div>
+
+        <div class="news-card">
+          <h5>Is VC Funding Drying Up?</h5>
+          <p>
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <article class="bottom">
+      <div class="card">
+        <div class="card-image-container">
+          <img src="./images/image-retro-pcs.jpg" />
+        </div>
+        <div class="card-content-container">
+          <div class="count">01</div>
+          <h4>Reviving Retro PCs</h4>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image-container">
+          <img src="./images/image-top-laptops.jpg" alt="" />
+        </div>
+        <div class="card-content-container">
+          <div class="count">02</div>
+          <h4>Top 10 Laptops of 2022</h4>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image-container">
+          <img src="./images/image-gaming-growth.jpg" alt="" />
+        </div>
+        <div class="card-content-container">
+          <div class="count">03</div>
+          <h4>The Growth of Gaming</h4>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+    </article>
+    <!-- Add this inside the <head> -->
+  </body>
+</html>
