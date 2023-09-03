@@ -42,10 +42,11 @@ Users should be able to:
   <div style="text-align:center;">
     <img src="images/screenShots/mobile-active.png" alt="mobile toggled">
 </div>
+
 ### Links
 
 - Solution URL: [Github](git@github.com:Mafilala/News-Homepage.git)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Live Site URL: [Netlify](https://main--courageous-malabi-77661d.netlify.app/)
 
 ## My process
 
